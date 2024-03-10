@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+  body {
+    @apply bg-primary-dark text-black;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-neue tracking-wider;
+  }
+  p,
+  a,
+  span,
+  div {
+    @apply font-grotesk;
+  }
+}
+
+@layer components {
+  .neu {
+    @apply mb-[3px] mr-[3px] rounded-sm border-2 border-black p-2 font-semibold shadow;
+  }
+
+  .neu-pressed {
+    @apply translate-x-[2.5px] translate-y-[2.5px] shadow-active;
+  }
+}
