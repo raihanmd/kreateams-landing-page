@@ -1,34 +1,20 @@
+import TextFitContainer from "@/components/ui/text-fit-container";
+
 export default function Branding() {
   return (
-    <div className="mt-48 grid gap-4 lg:grid-cols-2">
-      <div
-        id="what-we-do"
-        className="neu flex w-full flex-col gap-4 bg-primary-light px-4 py-5 md:px-10"
-      >
-        <h3 className="text-center font-neue text-4xl">What We Do..?</h3>
-        <div className="flex flex-col justify-center gap-3">
-          {FEATURES.map((feature) => (
-            <div className="flex gap-2" key={feature.name}>
-              <p className="text-6xl text-yellow-600">*</p>
-              <p>{feature.content}</p>
-            </div>
-          ))}
+    <div className="mt-52">
+      <TextFitContainer content="About" />
+      <div className="flex pt-36">
+        <div className="flex gap-2">
+          <h2 className="text-3xl lg:text-5xl">What is Collaboration..?</h2>
+          <div>p</div>
         </div>
-      </div>
-      <div className="neu bg-secondary-dark lg:-translate-y-20">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-          beatae dicta provident? A, mollitia officia voluptatem eveniet maiores
-          repellendus harum unde quasi nisi accusamus provident distinctio nemo
-          labore quis minus facere asperiores omnis est ipsa accusantium saepe
-          amet, voluptatibus hic.
-        </p>
       </div>
     </div>
   );
 }
 
-const FEATURES = [
+const WHAT_WE_DO = [
   {
     name: "Community Building",
     content:
@@ -58,5 +44,33 @@ const FEATURES = [
     name: "Mentorship Program",
     content:
       "Our mentorship program pairs experienced professionals with aspiring creatives, providing guidance, feedback, and support along their journey.",
+  },
+];
+
+const COLLABORATION = [
+  {
+    name: "Synergy",
+    content:
+      "Collaboration allows us to leverage the unique strengths of each team member, resulting in synergistic outcomes that are more innovative and impactful than individual efforts.",
+  },
+  {
+    name: "Cross-disciplinary Exchange",
+    content:
+      "We believe in the power of interdisciplinary collaboration, where individuals from different backgrounds come together to tackle complex challenges and explore new possibilities.",
+  },
+  {
+    name: "Open Communication",
+    content:
+      "Effective collaboration relies on open and transparent communication. We encourage active listening, constructive feedback, and dialogue to ensure that everyone's voice is heard and valued.",
+  },
+  {
+    name: "Shared Goals",
+    content:
+      "Collaborative projects are guided by shared goals and objectives. By aligning our efforts towards a common purpose, we can achieve collective success and drive positive change.",
+  },
+  {
+    name: "Continuous Learning",
+    content:
+      "Collaboration is also a journey of continuous learning and growth. Through collaboration, we expand our horizons, acquire new skills, and gain valuable insights from our peers.",
   },
 ];

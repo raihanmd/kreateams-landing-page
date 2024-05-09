@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav
       ref={toggleRef}
-      className="sticky top-0 z-[1] w-full border-b-2 bg-secondary-dark px-2"
+      className="sticky top-0 z-[2] w-full border-b-2 bg-secondary-dark px-2"
     >
       <div className="mx-auto max-w-7xl justify-between md:flex">
         <div className="flex items-center justify-between bg-secondary-dark">
