@@ -18,7 +18,7 @@
     @apply border-black;
   }
   body {
-    @apply bg-primary-dark text-black;
+    @apply scroll-p-28 bg-primary-dark text-black;
   }
   h1,
   h2,
@@ -37,8 +37,16 @@
 }
 
 @layer components {
+  .container {
+    @apply mx-auto max-w-7xl overflow-x-hidden px-2 lg:overflow-visible;
+  }
+
   .neu {
-    @apply mb-[3px] mr-[3px] rounded-sm border-2 border-black p-2 font-semibold shadow;
+    @apply mb-[3px] mr-[3px] rounded-sm border-2 border-black font-semibold shadow;
+  }
+
+  .neu-brutal {
+    @apply hover:neu-pressed mb-[3px] mr-[3px] rounded-sm font-semibold shadow-brutal;
   }
 
   .neu-pressed {

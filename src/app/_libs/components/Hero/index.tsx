@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/_libs/components/ui/button";
 import { GiSun } from "react-icons/gi";
 
 export default function Hero() {
   return (
-    <header className="relative z-[1] grid place-items-center gap-3 py-20 md:py-32">
+    <header className="container relative z-[1] grid place-items-center gap-3 py-20 md:py-32">
       <Image
         draggable={false}
         className="absolute right-0 top-0 -z-10 mt-3 h-28 w-28 md:h-[180px] md:w-[180px]"

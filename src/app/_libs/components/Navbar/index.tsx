@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useBoolean } from "usehooks-ts";
 import { useOnClickOutside } from "usehooks-ts";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/_libs/components/ui/button";
 import HamburgerButton from "./HamburgerButton";
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav
       ref={toggleRef}
-      className="sticky top-0 z-[2] w-full border-b-2 bg-secondary-dark px-2"
+      className="sticky top-0 z-[5] w-full border-b-2 bg-secondary-dark px-2"
     >
       <div className="mx-auto max-w-7xl justify-between md:flex">
         <div className="flex items-center justify-between bg-secondary-dark">
@@ -50,15 +50,15 @@ export default function Navbar() {
 
 const NAV_ITEMS = [
   {
-    name: "What we do",
-    href: "#what-we-do",
+    name: "About Us",
+    href: "#about-us",
+  },
+  {
+    name: "Join",
+    href: "#join",
   },
   {
     name: "Startup Tools",
     href: "#startup-tools",
-  },
-  {
-    name: "About Us",
-    href: "#about-us",
   },
 ];

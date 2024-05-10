@@ -2,7 +2,7 @@ export type BrandingContent = {
   content: string;
 };
 
-export type BrandingCardProps = {
+export type AboutCardProps = {
   title: string;
   content: BrandingContent[];
   img: string;

@@ -25,11 +25,13 @@ const config = {
       boxShadow: {
         DEFAULT: "3px 3px 0px 0px #000",
         active: "1px 1px 0px 0px #000",
+        brutal: "7px 7px 0px 0px #000",
       },
       colors: {
         primary: "#fffcf4",
         "primary-content": "#f4b100",
         "primary-dark": "#ffeec1",
+        "primary-darker": "#db8524",
         "primary-light": "#ffffff",
 
         secondary: "#f4fff6",

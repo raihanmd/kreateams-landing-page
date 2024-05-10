@@ -1,11 +1,14 @@
-import Branding from "./_libs/components/Branding";
+import About from "./_libs/components/About";
 import Hero from "./_libs/components/Hero";
+import Join from "./_libs/components/Join";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-7xl overflow-x-hidden px-2 lg:overflow-visible">
+    <main className="">
       <Hero />
-      <Branding />
+      <About />
+      <Join />
+      <p>he</p>
     </main>
   );
 }
