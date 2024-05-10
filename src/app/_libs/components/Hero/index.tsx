@@ -16,24 +16,24 @@ export default function Hero() {
       />
       <Image
         draggable={false}
-        src={"/images/design.svg"}
-        alt="Design Image"
+        src={"/images/collaborate.svg"}
+        alt="Collaboration Image"
         height={300}
         width={300}
         className="absolute -bottom-24 left-0 -z-10 h-44 w-44 sm:h-52 sm:w-52 md:top-0 md:h-[300px] md:w-[300px]"
       />
       <Image
         draggable={false}
-        src={"/images/collaborate.svg"}
-        alt="Creativity Image"
+        src={"/images/design.svg"}
+        alt="Design Image"
         height={300}
         width={300}
-        className="absolute -bottom-28 right-0 -z-10 h-44 w-44 sm:h-52 sm:w-52 md:h-[300px] md:w-[300px]"
+        className="absolute -bottom-28 right-0 -z-10 h-44 w-44 sm:h-52 sm:w-52 md:right-20 md:h-[300px] md:w-[300px]"
       />
       <Image
         draggable={false}
         src={"/images/creativity.svg"}
-        alt="Collaborate Image"
+        alt="Creativity Image"
         height={300}
         width={300}
         className="absolute -bottom-52 left-1/2 -z-10 h-44 w-44 translate-x-[-50%] sm:h-52 sm:w-52 md:left-1/3 md:h-[300px] md:w-[300px]"

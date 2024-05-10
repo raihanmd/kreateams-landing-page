@@ -44,4 +44,14 @@
   .neu-pressed {
     @apply translate-x-[2.5px] translate-y-[2.5px] shadow-active;
   }
+
+  .floating-border-card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #f4b100;
+    border-radius: 5px;
+    z-index: -1;
+  }
 }
