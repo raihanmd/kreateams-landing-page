@@ -1,8 +1,12 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
-export default function TextFitContainer({ content }: { content: string }) {
+export default function TextFitContainer({
+  content,
+  ...props
+}: React.HTMLProps<HTMLDivElement> & { content: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -44,7 +48,11 @@ export default function TextFitContainer({ content }: { content: string }) {
 
   return (
     <div
-      className="relative -left-12 z-[-1] w-full xl:-left-48 2xl:-left-72"
+      {...props}
+      className={cn(
+        "relative -left-12 z-[-1] w-full xl:-left-48 2xl:-left-72",
+        props.className,
+      )}
       ref={containerRef}
     >
       <p

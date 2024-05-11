@@ -54,8 +54,8 @@ const NAV_ITEMS = [
     href: "#about-us",
   },
   {
-    name: "Join",
-    href: "#join",
+    name: "Programs",
+    href: "#our-programs",
   },
   {
     name: "Startup Tools",
