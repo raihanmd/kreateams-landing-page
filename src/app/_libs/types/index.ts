@@ -8,3 +8,14 @@ export type AboutCardProps = {
   img: string;
   reverse?: boolean;
 };
+
+export type ProgramCardProps = {
+  program: TProgram;
+  index: number;
+};
+
+export type TProgram = {
+  title: string;
+  content: string;
+  img: string;
+};

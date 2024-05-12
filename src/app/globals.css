@@ -39,7 +39,11 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-7xl overflow-x-hidden px-2 lg:overflow-visible;
+    @apply mx-auto max-w-7xl px-2;
+  }
+
+  .overflow {
+    @apply overflow-x-hidden lg:overflow-visible;
   }
 
   .neu {

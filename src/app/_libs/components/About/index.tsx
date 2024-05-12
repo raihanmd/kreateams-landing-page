@@ -5,21 +5,23 @@ import Mission from "./Mission";
 
 export default function About() {
   return (
-    <div className="container mt-52" id="about-us">
-      <TextFitContainer content="About" />
-      <div className="flex flex-col gap-16 pt-36">
-        <Card
-          title="What we do..?"
-          content={WHAT_WE_DO}
-          img="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <Mission />
-        <Card
-          title="Why Collaboration..?"
-          content={COLLABORATION}
-          img="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          reverse
-        />
+    <div className="overflow container mt-52" id="about-us">
+      <div>
+        <TextFitContainer content="About" />
+        <div className="flex flex-col gap-16 pt-36">
+          <Card
+            title="What we do..?"
+            content={WHAT_WE_DO}
+            img="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+          <Mission />
+          <Card
+            title="Why Collaboration..?"
+            content={COLLABORATION}
+            img="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            reverse
+          />
+        </div>
       </div>
     </div>
   );
