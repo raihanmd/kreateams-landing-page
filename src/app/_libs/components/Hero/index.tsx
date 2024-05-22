@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { GiSun } from "react-icons/gi";
 
 import { Button } from "@/app/_libs/components/ui/button";
-import { GiSun } from "react-icons/gi";
 
 export default function Hero() {
   return (

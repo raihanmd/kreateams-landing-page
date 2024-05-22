@@ -12,6 +12,15 @@
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
   }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @layer base {
@@ -38,6 +47,11 @@
 }
 
 @layer components {
+  .animate-scroll {
+    display: flex;
+    animation: scroll 30s linear infinite;
+  }
+
   .container {
     @apply mx-auto max-w-7xl px-2;
   }
